@@ -1,0 +1,7 @@
+
+      @font-face {
+        font-family: 'SpaceMono-BoldItalic';
+        src: local('SpaceMono-BoldItalic'),
+          /* Get the user's local font if it exists */
+          url('/fonts/OpenSans-Regular-webfont.woff') format('woff');
+      }
