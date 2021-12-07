@@ -1,24 +1,20 @@
 :root {
-  --font-color: white;
-}
-
-@font-face {
-  font-family: 'SpaceMono-BoldItalic';
-  src: local('SpaceMono-BoldItalic'),
-    /* Get the user's local font if it exists */
-      url('/fonts/OpenSans-Regular-webfont.woff') format('woff');
+  --font-color: #351f25;
 }
 
 body {
   color: var(--font-color);
-  background: url('https://media.giphy.com/media/xT8qBfjJhOmNPTVWU0/giphy.gif');
-  background-size: cover;
+  background: url('https://media.giphy.com/media/FkpYiYNCDiALGwuIeL/giphy.gif');
+  /* background-size: cover; */
   overflow-x: hidden;
   height: 100vh;
 }
-
+/* 
+https://media.giphy.com/media/xT8qBfjJhOmNPTVWU0/giphy.gif
+https://media.giphy.com/media/FkpYiYNCDiALGwuIeL/giphy.gif
+https://media.giphy.com/media/3o6Zt6OdU44cxFt89G/giphy.gif */
 .container {
-  height: 100vh;
+  height: 90%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -32,15 +28,22 @@ img {
   width: 350px;
 }
 
-h1 {
+h2 {
   font-size: 30px;
   display: flex;
   justify-content: center;
   padding: 20px;
+  margin-top: 40%;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0px 35px 0px 35px;
+  text-align: center;
 }
 
 .textContainer {
-  width: 280px;
+  width: 250px;
   margin-top: 50;
   position: absolute;
   margin-top: 250px;
@@ -54,18 +57,40 @@ h1 {
 .flyingGrumpy img {
   height: 150px;
   width: 150px;
-  margin-left: -150px;
+  margin-top: -250px;
   position: absolute;
   z-index: 2;
-  margin-top: 17%;
+  margin-left: 30%;
 }
 
-/* .flying {
-  transform: translateX(75%);
-  transition: all s ease-in-out;
-} */
+.flying {
+  transform: translateY(120vh);
+  transition: all 10s ease-in-out;
+}
 
+.signContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.getSign {
+  width: 50%;
+  text-align: center;
+}
+
+.header {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+/* DESKTOP!! */
 @media screen and (min-width: 720px) {
+  .container {
+    height: 80%;
+  }
   .textContainer {
     width: 260px;
     margin-top: 50;
@@ -78,8 +103,31 @@ h1 {
     transform: rotate(360deg) scale(7);
     transition: all 8s ease-in-out;
   }
+
+  .flyingGrumpy img {
+    height: 150px;
+    width: 150px;
+    margin-left: -150px;
+    position: absolute;
+    z-index: 3;
+    margin-top: 14%;
+  }
+
   .flying {
-    transform: translateX(43%);
-    transition: all 7s ease-in-out;
+    transform: translateX(150%);
+    transition: all 10s ease-in-out;
+  }
+
+  h1 {
+    margin-top: 100px;
+  }
+  h2 {
+    margin-top: 20%;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin: -70px 35px 0px 35px;
+    text-align: center;
   }
 }

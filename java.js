@@ -9,7 +9,7 @@ const fortunes = [
   'It would be best to maintain a low profile for now',
   'Psst! Theyre being paid to love you',
   'The end is near, and its all yout fault',
-  'Life will be happy, until the end when you will be yourself alot',
+  'Life will be happy, until the end when you will pee yourself alot',
   'You will be poisoned',
 ];
 
@@ -41,7 +41,7 @@ window.addEventListener('keypress', function (event) {
 // loopa ut när man scrollar
 const signs = ['德', '家', '安', '春'];
 
-const javaSign = document.querySelector('h2');
+const javaSign = document.querySelector('h3');
 
 window.addEventListener('scroll', function (event) {
   signs.forEach((sign) => (javaSign.textContent += sign));
