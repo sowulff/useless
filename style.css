@@ -1,7 +1,85 @@
+:root {
+  --font-color: white;
+}
 
-      @font-face {
-        font-family: 'SpaceMono-BoldItalic';
-        src: local('SpaceMono-BoldItalic'),
-          /* Get the user's local font if it exists */
-          url('/fonts/OpenSans-Regular-webfont.woff') format('woff');
-      }
+@font-face {
+  font-family: 'SpaceMono-BoldItalic';
+  src: local('SpaceMono-BoldItalic'),
+    /* Get the user's local font if it exists */
+      url('/fonts/OpenSans-Regular-webfont.woff') format('woff');
+}
+
+body {
+  color: var(--font-color);
+  background: url('https://media.giphy.com/media/xT8qBfjJhOmNPTVWU0/giphy.gif');
+  background-size: cover;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+img {
+  height: 350px;
+  width: 350px;
+}
+
+h1 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.textContainer {
+  width: 280px;
+  margin-top: 50;
+  position: absolute;
+  margin-top: 250px;
+}
+
+.spin {
+  transform: rotate(360deg) scale(3);
+  transition: all 8s ease-in-out;
+}
+
+.flyingGrumpy img {
+  height: 150px;
+  width: 150px;
+  margin-left: -150px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 17%;
+}
+
+/* .flying {
+  transform: translateX(75%);
+  transition: all s ease-in-out;
+} */
+
+@media screen and (min-width: 720px) {
+  .textContainer {
+    width: 260px;
+    margin-top: 50;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 350px;
+  }
+
+  .spin {
+    transform: rotate(360deg) scale(7);
+    transition: all 8s ease-in-out;
+  }
+  .flying {
+    transform: translateX(43%);
+    transition: all 7s ease-in-out;
+  }
+}
