@@ -38,9 +38,8 @@ window.addEventListener('keypress', function (event) {
   //   javaContainer.classList.toggle('spin');
 });
 
-// loopa ut när man scrollar
+// loopa ut när man scrollar samt låter flying grumpy sväva förbi
 const signs = ['德', '家', '安', '春'];
-
 const javaSign = document.querySelector('h3');
 
 window.addEventListener('scroll', function (event) {
