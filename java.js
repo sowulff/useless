@@ -46,3 +46,10 @@ window.addEventListener('scroll', function (event) {
   signs.forEach((sign) => (javaSign.textContent += sign));
   javaflyingGrumpy.classList.add('flying');
 });
+
+//music
+
+const music = document.querySelector('.mysteriousMusic');
+moveGrumpy.addEventListener('click', (event) => {
+  music.play();
+});

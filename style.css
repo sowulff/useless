@@ -12,6 +12,7 @@
 }
 
 body {
+  background-color: black;
   color: var(--font-color);
   background: url('https://media.giphy.com/media/xT8qBfjJhOmNPTVWU0/giphy.gif');
   /* background-size: cover; */
@@ -62,7 +63,7 @@ h3 {
 }
 
 .textContainer {
-  width: 250px;
+  width: 210px;
   margin-top: 50;
   position: absolute;
   margin-top: 350px;
@@ -107,6 +108,7 @@ h3 {
   justify-content: center;
   text-align: center;
 }
+
 /* DESKTOP!! */
 @media screen and (min-width: 720px) {
   .container {
@@ -123,7 +125,7 @@ h3 {
   }
 
   .textContainer {
-    width: 260px;
+    width: 250px;
     margin-top: 50;
     position: absolute;
     margin-top: -70px;
