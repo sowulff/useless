@@ -1,17 +1,16 @@
 // array with fortunes
 const fortunes = [
-  "I see money in your future, unfortunately it's not yours",
+  "I see money in your future, unfortunately it's not your's",
   'Your pet is planning to eat you',
-  "I don't feel like it right now. Go home.",
   'You will die alone and poorly dressed',
   'You will always step on a wet spot after putting on freshly dried socks',
   'You will be chosen for the Hunger Games',
-  'Error 404: Future not found',
   "Come back later, I'm in a bad mood",
   "They're being paid to love you. Sad.",
-  "The end is near, and it's all yout fault",
+  "The end is near, and it's all you'r fault",
   "Life will be okey, until the end when you'll pee yourself alot",
-  'You will be poisoned',
+  'You will be poisoned any day now',
+  "I'm sorry to tell you that you will forget all your passwords and pin-codes and never remember your new ones",
 ];
 
 // get a random fortune when clicking on the framed grumpy fortuneteller

@@ -1,5 +1,6 @@
 :root {
   --font-color: #ffffff;
+  --font-family: 'Montez';
 }
 
 @font-face {
@@ -10,23 +11,19 @@
 
 body {
   color: var(--font-color);
+  font-family: var(--font-family);
   background: url('https://media.giphy.com/media/xT8qBfjJhOmNPTVWU0/giphy.gif');
   overflow-x: hidden;
   height: 100vh;
-  font-family: 'Montez';
 }
-/* 
-https://media.giphy.com/media/xT8qBfjJhOmNPTVWU0/giphy.gif
-https://media.giphy.com/media/FkpYiYNCDiALGwuIeL/giphy.gif
-https://media.giphy.com/media/3o6Zt6OdU44cxFt89G/giphy.gif */
 
 h1 {
-  font-size: 45px;
+  font-size: 50px;
   z-index: 10;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 22px;
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -45,11 +42,12 @@ img {
 }
 
 .header {
-  width: 100vw;
+  width: 90vw;
   height: 100px;
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-left: 2%;
 }
 
 .container {
@@ -67,10 +65,9 @@ img {
 }
 
 .textContainer {
-  width: 240px;
+  width: 230px;
   position: absolute;
   margin-top: 330px;
-  font-size: 25px;
   z-index: -2;
 }
 
@@ -132,6 +129,7 @@ img {
 
   .header {
     height: 120px;
+    margin-left: 4%;
   }
 
   .framesContainer {
@@ -139,7 +137,7 @@ img {
   }
 
   .textContainer {
-    width: 280px;
+    width: 260px;
     margin-top: 65px;
     position: absolute;
     margin-top: -50px;
