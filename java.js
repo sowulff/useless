@@ -1,44 +1,43 @@
+// array with fortunes
 const fortunes = [
-  'I see money in your future, unfortunately its not yours',
+  "I see money in your future, unfortunately it's not yours",
   'Your pet is planning to eat you',
+  "I don't feel like it right now. Go home.",
   'You will die alone and poorly dressed',
   'You will always step on a wet spot after putting on freshly dried socks',
-  'You have been chosen for the Hunger Game',
+  'You will be chosen for the Hunger Games',
   'Error 404: Future not found',
-  'As long as you dont sign up for anything new, you will do fine.',
-  'It would be best to maintain a low profile for now',
-  'Psst! Theyre being paid to love you',
-  'The end is near, and its all yout fault',
-  'Life will be happy, until the end when you will pee yourself alot',
+  "Come back later, I'm in a bad mood",
+  "They're being paid to love you. Sad.",
+  "The end is near, and it's all yout fault",
+  "Life will be okey, until the end when you'll pee yourself alot",
   'You will be poisoned',
 ];
 
-// får ut en random spådom från arrayen när man klickar på bilden
-const javaFortune = document.querySelector('.imageContainer');
+// get a random fortune when clicking on the framed grumpy fortuneteller
+const javaFortune = document.querySelector('.framesContainer');
 const javaContainer = document.querySelector('.textContainer');
 const javaflyingGrumpy = document.querySelector('.flyingGrumpy');
-const moveGrumpy = document.querySelector('.flyingGrumpy');
 
-//klick på helbild
-moveGrumpy.addEventListener('click', () => {
+javaflyingGrumpy.addEventListener('click', () => {
   const randomElement = fortunes[Math.floor(Math.random() * fortunes.length)];
   javaContainer.innerHTML = randomElement;
 });
 
-//klick på flygande grupmy
+// to make it possible to get a fortune when clicking in the flying Grumpys head aswell.
 javaFortune.addEventListener('click', () => {
   const randomElement = fortunes[Math.floor(Math.random() * fortunes.length)];
   javaContainer.innerHTML = randomElement;
 });
 
-// Snurra när man klickar på valfri knapp
+// grumpy cat spins and zooms on keypress
 const img = document.querySelector('.img');
+
 window.addEventListener('keypress', function (event) {
   img.classList.toggle('spin');
-  //   javaContainer.classList.toggle('spin');
 });
 
-// loopa ut när man scrollar samt låter flying grumpy sväva förbi
+// random meaningful letters that you dont understand is looped out when scrolling. A grumpy cat is also flying by on scroll.
 const signs = ['德', '家', '安', '春'];
 const javaSign = document.querySelector('h3');
 
@@ -47,9 +46,9 @@ window.addEventListener('scroll', function (event) {
   javaflyingGrumpy.classList.add('flying');
 });
 
-//music
-
+// mysterious music is played if you manage to press the flying grumpycat before it passes.
 const music = document.querySelector('.mysteriousMusic');
-moveGrumpy.addEventListener('click', (event) => {
+
+javaflyingGrumpy.addEventListener('click', (event) => {
   music.play();
 });
