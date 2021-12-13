@@ -24,5 +24,5 @@ Link to site: https://grumpy-fortuneteller.netlify.app/
 
 Tested by the following people:
 
-1. Jennifer Andersson
+1. Nelly Eriksson
 2. Linnea Eriksson

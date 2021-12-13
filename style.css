@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -65,10 +65,16 @@ img {
 }
 
 .textContainer {
-  width: 230px;
+  width: 200px;
   position: absolute;
   margin-top: 330px;
   z-index: -2;
+}
+
+.textContainer p {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
 }
 
 .spin {
@@ -137,11 +143,12 @@ img {
   }
 
   .textContainer {
-    width: 260px;
+    width: 240px;
     margin-top: 65px;
     position: absolute;
     margin-top: -50px;
     margin-left: 350px;
+    font-size: 24px;
   }
 
   .spin {
