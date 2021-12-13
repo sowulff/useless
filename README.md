@@ -12,13 +12,16 @@ Link to site: https://grumpy-fortuneteller.netlify.app/
 2. Start a local server in the command line.
 3. Open the index.html file in your browser.
 
-# Code Review
+# Code Review by Sophie Wulff
 
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
+1. `java.js:17-19` - These const-names all starts with the word java, that dosen't feel necessary.
+2. `index.html:33` - On width 635-720 the container-text jumps out from the frame.
+3. `index.html:22` - On width 720-830 the h1 gets a position over the first frame.
+4. `java.js:23-29` - Instead of using innerHTML you can use text-Content.
+5. `java.js:27-29` - The const-names randomElement and javaContainer could be more clearly.
+
+Really good job with the first javaScript-website, I like the flying cat that plays music on click!
+
 
 # Testers
 
